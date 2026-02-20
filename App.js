@@ -3,6 +3,7 @@ import "./global.css"
 import OnPress from './src/components/OnPress.jsx'
 import Props from './src/components/Props.jsx'
 import { useState } from 'react'
+import InputText from './src/components/InputText.jsx'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Text>{chgname}</Text>
       <Button title='Press this button to change the name' onPress={() => chgname=="Ajinkya"?setChgName("Raj"):setChgName("Ajinkya")}/>
       <Props />
+      <InputText />
     </View>
   )
 }
