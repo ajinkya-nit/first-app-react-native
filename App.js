@@ -4,19 +4,23 @@ import OnPress from './src/components/OnPress.jsx'
 import Props from './src/components/Props.jsx'
 import { useState } from 'react'
 import InputText from './src/components/InputText.jsx'
+import FlatListScreen from './src/components/FlatListScreen.jsx'
 
 
 const App = () => {
     const [chgname, setChgName] = useState("Ajinkya")
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="color-slate-700 font-extrabold">This is Ajinkya</Text>
+    <View className='flex justify-end content-center text-blue-900'>
+      {/* <View>
+      <Text className="text-slate-700 font-extrabold">This is Ajinkya</Text>
       <Button title="Press Here"/>
+      </View>
       <OnPress/>
+      <InputText />
       <Text>{chgname}</Text>
       <Button title='Press this button to change the name' onPress={() => chgname=="Ajinkya"?setChgName("Raj"):setChgName("Ajinkya")}/>
-      <Props />
-      <InputText />
+      <Props /> */}
+      <FlatListScreen />
     </View>
   )
 }
