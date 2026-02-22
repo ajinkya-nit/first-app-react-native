@@ -5,22 +5,20 @@ import Props from './src/components/Props.jsx'
 import { useState } from 'react'
 import InputText from './src/components/InputText.jsx'
 import FlatListScreen from './src/components/FlatListScreen.jsx'
+import Grid from './src/components/Grid.jsx'
+import ClassComponents from './src/components/ClassComponents.jsx'
+import UseEffectHook from './src/components/UseEffectHook.jsx'
+import UseEffectHookUnmounting from './src/components/UseEffectHookUnmounting.jsx'
 
 
 const App = () => {
     const [chgname, setChgName] = useState("Ajinkya")
   return (
-    <View className='flex justify-end content-center text-blue-900'>
-      {/* <View>
-      <Text className="text-slate-700 font-extrabold">This is Ajinkya</Text>
-      <Button title="Press Here"/>
-      </View>
-      <OnPress/>
-      <InputText />
-      <Text>{chgname}</Text>
-      <Button title='Press this button to change the name' onPress={() => chgname=="Ajinkya"?setChgName("Raj"):setChgName("Ajinkya")}/>
-      <Props /> */}
-      <FlatListScreen />
+    <View className='flex-1 justify-start items-center'>
+      <Text className="p-20">This is Ajinkya</Text>
+      {/* <AgeCheck/>
+      <Grid/> */}
+      <UseEffectHookUnmounting/>
     </View>
   )
 }
